@@ -1,0 +1,459 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "10"
+      ]
+     },
+     "execution_count": 1,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "gandalf = [10, 11, 13, 30, 22, 11, 10, 33, 22, 22]\n",
+    "saruman = [23, 66, 12, 43, 12, 10, 44, 23, 12, 17]\n",
+    "\n",
+    "len (gandalf)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "They are 10 total spells\n"
+     ]
+    }
+   ],
+   "source": [
+    "gandalf = [10, 11, 13, 30, 22, 11, 10, 33, 22, 22]\n",
+    "saruman = [23, 66, 12, 43, 12, 10, 44, 23, 12, 17]\n",
+    "\n",
+    "spells = len (gandalf)\n",
+    "print (\"They are\", spells, \"total spells\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "They are 10 total spells\n",
+      "10\n",
+      "11\n",
+      "13\n",
+      "30\n",
+      "22\n",
+      "11\n",
+      "10\n",
+      "33\n",
+      "22\n",
+      "22\n",
+      "23\n",
+      "66\n",
+      "12\n",
+      "43\n",
+      "12\n",
+      "10\n",
+      "44\n",
+      "23\n",
+      "12\n",
+      "17\n"
+     ]
+    }
+   ],
+   "source": [
+    "gandalf = [10, 11, 13, 30, 22, 11, 10, 33, 22, 22]\n",
+    "saruman = [23, 66, 12, 43, 12, 10, 44, 23, 12, 17]\n",
+    "\n",
+    "spells = len (gandalf)\n",
+    "print (\"They are\", spells, \"total spells\")\n",
+    "\n",
+    "gandalf_wins = 0\n",
+    "saruman_wins = 0 \n",
+    "\n",
+    "for i in gandalf:\n",
+    "    print (i)\n",
+    "\n",
+    "for k in saruman:\n",
+    "    print (k)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "They are 10 total spells\n",
+      "saruman wins\n"
+     ]
+    }
+   ],
+   "source": [
+    "gandalf = [10, 11, 13, 30, 22, 11, 10, 33, 22, 22]\n",
+    "saruman = [23, 66, 12, 43, 12, 10, 44, 23, 12, 17]\n",
+    "\n",
+    "spells = len (gandalf)\n",
+    "print (\"They are\", spells, \"total spells\")\n",
+    "\n",
+    "gandalf_wins = 0\n",
+    "saruman_wins = 0\n",
+    "\n",
+    "if gandalf [0] > saruman [0]:\n",
+    "    print (\"gandalf wins\")\n",
+    "\n",
+    "else:\n",
+    "    print (\"saruman wins\")\n",
+    "\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 36,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(False, False, True, False, True, True, False, True, True, True)\n"
+     ]
+    }
+   ],
+   "source": [
+    "gandalf = [10, 11, 13, 30, 22, 11, 10, 33, 22, 22]\n",
+    "saruman = [23, 66, 12, 43, 12, 10, 44, 23, 12, 17]\n",
+    "\n",
+    "challenges = gandalf [0] > saruman [0], gandalf [1] > saruman [1], gandalf [2] > saruman [2], gandalf [3] > saruman [3], gandalf [4] > saruman [4], gandalf [5] > saruman [5], gandalf [6] > saruman [6], gandalf [7] > saruman [7], gandalf [8] > saruman [8], gandalf [9] > saruman [9]\n",
+    "print (challenges)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 49,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "They are 10 total spells\n",
+      "1st challenge saruman wins challenge\n",
+      "2nd challenge saruman wins challenge\n",
+      "2rd challenge gandalf wins challenge\n",
+      "4th challenge saruman wins challenge\n",
+      "5th challenge gandalf wins challenge\n",
+      "6th challenge gandalf wins challenge\n",
+      "7th challenge saruman wins challenge\n",
+      "8th challenge gandalf wins challenge\n",
+      "9th challenge gandalf wins challenge\n",
+      "10th challenge gandalf wins challenge\n"
+     ]
+    }
+   ],
+   "source": [
+    "gandalf = [10, 11, 13, 30, 22, 11, 10, 33, 22, 22]\n",
+    "saruman = [23, 66, 12, 43, 12, 10, 44, 23, 12, 17]\n",
+    "\n",
+    "spells = len (gandalf)\n",
+    "print (\"They are\", spells, \"total challenges\")\n",
+    "\n",
+    "challenge1 = gandalf [0] > saruman [0] \n",
+    "challenge2 = gandalf [1] > saruman [1]\n",
+    "challenge3 = gandalf [2] > saruman [2] \n",
+    "challenge4 = gandalf [3] > saruman [3]\n",
+    "challenge5 = gandalf [4] > saruman [4]\n",
+    "challenge6 = gandalf [5] > saruman [5]\n",
+    "challenge7 = gandalf [6] > saruman [6]\n",
+    "challenge8 = gandalf [7] > saruman [7]\n",
+    "challenge9 = gandalf [8] > saruman [8]\n",
+    "challenge10 = gandalf [9] > saruman [9]\n",
+    "\n",
+    "\n",
+    "\n",
+    "if challenge1 == False:\n",
+    "    print (\"1st challenge\", \"saruman wins challenge\")\n",
+    "\n",
+    "else:\n",
+    "    print (\"1st challenge\", \"gandalf wins challenge\")\n",
+    "    \n",
+    "\n",
+    "if challenge2 == False:\n",
+    "    print (\"2nd challenge\", \"saruman wins challenge\")\n",
+    "\n",
+    "else:\n",
+    "    print (\"2nd challenge\", \"gandalf wins challenge\")\n",
+    "    \n",
+    "if challenge3 == False:\n",
+    "    print (\"2rd challenge\", \"saruman wins challenge\")\n",
+    "\n",
+    "else:\n",
+    "    print (\"2rd challenge\", \"gandalf wins challenge\")\n",
+    "\n",
+    "if challenge4 == False:\n",
+    "    print (\"4th challenge\", \"saruman wins challenge\")\n",
+    "\n",
+    "else:\n",
+    "    print (\"4th challenge\", \"gandalf wins challenge\")\n",
+    "    \n",
+    "if challenge5 == False:\n",
+    "    print (\"5th challenge\", \"saruman wins challenge\")\n",
+    "\n",
+    "else:\n",
+    "    print (\"5th challenge\", \"gandalf wins challenge\")\n",
+    "    \n",
+    "if challenge6 == False:\n",
+    "    print (\"6th challenge\", \"saruman wins challenge\")\n",
+    "\n",
+    "else:\n",
+    "    print (\"6th challenge\", \"gandalf wins challenge\")\n",
+    "    \n",
+    "if challenge7 == False:\n",
+    "    print (\"7th challenge\", \"saruman wins challenge\")\n",
+    "\n",
+    "else:\n",
+    "    print (\"7th challenge\", \"gandalf wins challenge\")\n",
+    "    \n",
+    "if challenge8 == False:\n",
+    "    print (\"8th challenge\", \"saruman wins challenge\")\n",
+    "\n",
+    "else:\n",
+    "    print (\"8th challenge\", \"gandalf wins challenge\")\n",
+    "    \n",
+    "if challenge9 == False:\n",
+    "    print (\"9th challenge\", \"saruman wins challenge\")\n",
+    "\n",
+    "else:\n",
+    "    print (\"9th challenge\", \"gandalf wins challenge\")\n",
+    "    \n",
+    "if challenge10 == False:\n",
+    "    print (\"10th challenge\", \"saruman wins challenge\")\n",
+    "\n",
+    "else:\n",
+    "    print (\"10th challenge\", \"gandalf wins challenge\")\n",
+    "    \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 41,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "They are 10 total spells\n",
+      "False\n",
+      "saruman wins challenge\n"
+     ]
+    }
+   ],
+   "source": [
+    "gandalf = [10, 11, 13, 30, 22, 11, 10, 33, 22, 22]\n",
+    "saruman = [23, 66, 12, 43, 12, 10, 44, 23, 12, 17]\n",
+    "\n",
+    "spells = len (gandalf)\n",
+    "print (\"They are\", spells, \"total spells\")\n",
+    "\n",
+    "challenges = gandalf [0:10] > saruman [0:10]\n",
+    "print (challenges)\n",
+    "\n",
+    "if challenges == False:\n",
+    "    print (\"saruman wins challenge\")\n",
+    "\n",
+    "else:\n",
+    "    print (\"gandalf wins challenge\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 44,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "They are 10 total spells\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "False"
+      ]
+     },
+     "execution_count": 44,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "gandalf = [10, 11, 13, 30, 22, 11, 10, 33, 22, 22]\n",
+    "saruman = [23, 66, 12, 43, 12, 10, 44, 23, 12, 17]\n",
+    "\n",
+    "spells = len (gandalf)\n",
+    "print (\"They are\", spells, \"total spells\")\n",
+    "\n",
+    "gandalf [0:10] > saruman [0:10]\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 57,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "They are 10 total challenges\n",
+      "1st challenge saruman wins challenge\n",
+      "2nd challenge saruman wins challenge\n",
+      "2rd challenge gandalf wins challenge\n",
+      "4th challenge saruman wins challenge\n",
+      "5th challenge gandalf wins challenge\n",
+      "6th challenge gandalf wins challenge\n",
+      "7th challenge saruman wins challenge\n",
+      "8th challenge gandalf wins challenge\n",
+      "9th challenge gandalf wins challenge\n",
+      "10th challenge gandalf wins challenge\n"
+     ]
+    }
+   ],
+   "source": [
+    "gandalf = [10, 11, 13, 30, 22, 11, 10, 33, 22, 22]\n",
+    "saruman = [23, 66, 12, 43, 12, 10, 44, 23, 12, 17]\n",
+    "\n",
+    "spells = len (gandalf)\n",
+    "print (\"They are\", spells, \"total challenges\")\n",
+    "\n",
+    "\n",
+    "\n",
+    "challenge1 = gandalf [0] > saruman [0]\n",
+    "challenge2 = gandalf [1] > saruman [1]\n",
+    "challenge3 = gandalf [2] > saruman [2] \n",
+    "challenge4 = gandalf [3] > saruman [3]\n",
+    "challenge5 = gandalf [4] > saruman [4]\n",
+    "challenge6 = gandalf [5] > saruman [5]\n",
+    "challenge7 = gandalf [6] > saruman [6]\n",
+    "challenge8 = gandalf [7] > saruman [7]\n",
+    "challenge9 = gandalf [8] > saruman [8]\n",
+    "challenge10 = gandalf [9] > saruman [9]\n",
+    "\n",
+    "\n",
+    "\n",
+    "if challenge1 == False:\n",
+    "    print (\"1st challenge\", \"saruman wins challenge\")\n",
+    "\n",
+    "else:\n",
+    "    print (\"1st challenge\", \"gandalf wins challenge\")\n",
+    "    \n",
+    "\n",
+    "if challenge2 == False:\n",
+    "    print (\"2nd challenge\", \"saruman wins challenge\")\n",
+    "\n",
+    "else:\n",
+    "    print (\"2nd challenge\", \"gandalf wins challenge\")\n",
+    "    \n",
+    "if challenge3 == False:\n",
+    "    print (\"2rd challenge\", \"saruman wins challenge\")\n",
+    "\n",
+    "else:\n",
+    "    print (\"2rd challenge\", \"gandalf wins challenge\")\n",
+    "\n",
+    "if challenge4 == False:\n",
+    "    print (\"4th challenge\", \"saruman wins challenge\")\n",
+    "\n",
+    "else:\n",
+    "    print (\"4th challenge\", \"gandalf wins challenge\")\n",
+    "    \n",
+    "if challenge5 == False:\n",
+    "    print (\"5th challenge\", \"saruman wins challenge\")\n",
+    "\n",
+    "else:\n",
+    "    print (\"5th challenge\", \"gandalf wins challenge\")\n",
+    "    \n",
+    "if challenge6 == False:\n",
+    "    print (\"6th challenge\", \"saruman wins challenge\")\n",
+    "\n",
+    "else:\n",
+    "    print (\"6th challenge\", \"gandalf wins challenge\")\n",
+    "    \n",
+    "if challenge7 == False:\n",
+    "    print (\"7th challenge\", \"saruman wins challenge\")\n",
+    "\n",
+    "else:\n",
+    "    print (\"7th challenge\", \"gandalf wins challenge\")\n",
+    "    \n",
+    "if challenge8 == False:\n",
+    "    print (\"8th challenge\", \"saruman wins challenge\")\n",
+    "\n",
+    "else:\n",
+    "    print (\"8th challenge\", \"gandalf wins challenge\")\n",
+    "    \n",
+    "if challenge9 == False:\n",
+    "    print (\"9th challenge\", \"saruman wins challenge\")\n",
+    "\n",
+    "else:\n",
+    "    print (\"9th challenge\", \"gandalf wins challenge\")\n",
+    "    \n",
+    "if challenge10 == False:\n",
+    "    print (\"10th challenge\", \"saruman wins challenge\")\n",
+    "\n",
+    "else:\n",
+    "    print (\"10th challenge\", \"gandalf wins challenge\")\n",
+    "    \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
