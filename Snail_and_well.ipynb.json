@@ -52,6 +52,13 @@
   },
   {
    "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
    "execution_count": 13,
    "metadata": {},
    "outputs": [
@@ -202,6 +209,7 @@
     "\n",
     "\n",
     "print(\"Snail just dropped\")\n",
+    "\n",
     "total_position += snail_position\n",
     "\n",
     "number_days = well_height/snail_position\n",
@@ -225,7 +233,94 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 29,
+   "execution_count": 41,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "well_height = 125\n",
+    "daily_distance = 30\n",
+    "nightly_distance = -20\n",
+    "snail_daily_movement = daily_distance + nightly_distance\n",
+    "initial_position = 0"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 43,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "day: 0, initial position: 0\n"
+     ]
+    }
+   ],
+   "source": [
+    "print (f'day: {current_day}, initial position: {initial_position}')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "10\n"
+     ]
+    }
+   ],
+   "source": [
+    "day_1_position = initial_position + snail_daily_movement\n",
+    "print(day_1_position)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 50,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "day: 1, position: 10\n",
+      "day: 2, position: 20\n",
+      "day: 3, position: 30\n",
+      "day: 4, position: 40\n",
+      "day: 5, position: 50\n",
+      "day: 6, position: 60\n",
+      "day: 7, position: 70\n",
+      "day: 8, position: 80\n",
+      "day: 9, position: 90\n",
+      "day: 10, position: 100\n",
+      "day: 11, position: 130\n",
+      "final day: 11, final position: 130\n"
+     ]
+    }
+   ],
+   "source": [
+    "current_day = 0\n",
+    "current_position = 0\n",
+    "\n",
+    "while current_position < well_height:\n",
+    "    current_day += 1\n",
+    "    #current_position = snail_daily_movement * current_day + initial_position\n",
+    "    current_position = current_position + daily_distance\n",
+    "    if current_position < well_height:\n",
+    "        current_position = current_position + nightly_distance\n",
+    "    print (f'day: {current_day}, position: {current_position}')\n",
+    "\n",
+    "print (f'final day: {current_day}, final position: {current_position}')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
    "metadata": {},
    "outputs": [
     {
@@ -262,13 +357,6 @@
     }
    ],
    "source": [
-    "well_height = 125\n",
-    "daily_distance = 30\n",
-    "nightly_distance = -20\n",
-    "snail_position = daily_distance + nightly_distance\n",
-    "total_position = 0\n",
-    "\n",
-    "\n",
     "print(\"Snail just dropped\")\n",
     "total_position += snail_position\n",
     "\n",
